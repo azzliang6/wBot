@@ -2,17 +2,17 @@
 
 User=[
     {
-        'app_id' : '',
-        'app_secret' : '',
+        'app_id' : 'wx0788e6432f81f28d',
+        'app_secret' : '80a7b2b7257ec426a54a99edf66c7906',
         '用户列表' : [
             {
-                '用户ID' : '',
-                '模块ID' : '',
-                '省份' : '云南',#对应另一个文件查找
-                '城市' : '昆明',#对应另一个文件查找
+                '用户ID' : 'oQr-K6LZgkY-sJEsOMy4qxNIXNmc',
+                '模块ID' : 'G64Q-nG9Y8EdLD3XQwL9Nf0GaN-GXuZf3RzYwD4Uang',
+                '省份' : '贵州',#对应另一个文件查找
+                '城市' : '贵阳',#对应另一个文件查找
                 '生日' : {
-                    '宝宝':'2020-2-2',
-                    '憨憨':'2020-2-2',
+                    '妈妈':'1978-9-11',
+                    '弟弟':'2003-12-2',
                 },
             },
         ]
@@ -84,11 +84,13 @@ def 发送消息(app_id,app_secret,用户):
     data = {
         'touser': 用户['用户ID'],
         'template_id': 用户['模块ID'],
-        'url': 'http://www.baidu.com',
+        'url': 'https://broccoli.uc.cn/apps/pneumonia/routes/index?uc_param_str=dsdnfrpfbivesscpgimibtbmnijblauputogpintnwktprchmt&uc_biz_str=S%3Acustom%7COPT%3AS_BAR_BG_COLOR%40f7f7f7%7COPT%3ATOOLBAR_STYLE%401%7COPT%3ABACK_BTN_STYLE%400&entryrtne=jiejing&tab=fromsource
+',
         'topcolor': '#FF0000',
         'data': {
         }
     }
+    显示内容+='辛会 早呀~~\n\n'
     显示内容+='今日公历：%s\n%s\n\n'%(时间,今日农历)
     显示内容+='城市：%s\n\n'%用户['城市']
     显示内容+='天气情况：%s\n\n'%天气情况
