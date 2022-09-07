@@ -84,7 +84,7 @@ def 发送消息(app_id,app_secret,用户):
     data = {
         'touser': 用户['用户ID'],
         'template_id': 用户['模块ID'],
-        'url': 'https://broccoli.uc.cn/apps/pneumonia/routes/index?uc_param_str=dsdnfrpfbivesscpgimibtbmnijblauputogpintnwktprchmt&uc_biz_str=S%3Acustom%7COPT%3AS_BAR_BG_COLOR%40f7f7f7%7COPT%3ATOOLBAR_STYLE%401%7COPT%3ABACK_BTN_STYLE%400&entryrtne=jiejing&tab=fromsource
+        'url':'https://broccoli.uc.cn/apps/pneumonia/routes/index?uc_param_str=dsdnfrpfbivesscpgimibtbmnijblauputogpintnwktprchmt&uc_biz_str=S%3Acustom%7COPT%3AS_BAR_BG_COLOR%40f7f7f7%7COPT%3ATOOLBAR_STYLE%401%7COPT%3ABACK_BTN_STYLE%400&entryrtne=share
 ',
         'topcolor': '#FF0000',
         'data': {
